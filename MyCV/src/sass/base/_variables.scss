@@ -1,0 +1,55 @@
+  
+// LTR languages directions.
+
+$default-float: left;
+$opposite-float: right;
+$default-direction: ltr;
+$opposite-direction: rtl;
+$lang: en;
+
+
+// LTR Fonts
+@font-face {
+    font-family: 'LemonMilkRegular';
+    src: url('#{$english-font-base}.oft?ver=0');
+    src: url('#{$english-font-base}.oft?ver=0#iefix') format('oft');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'medium-italic';
+    src: url('#{$english-font-medium-italic}.oft?ver=0');
+    src: url('#{$english-font-medium-italic}.oft?ver=0#iefix') format('oft');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LemonMilkBold';
+    src: url('#{$english-font-bold}.oft?ver=0');
+    src: url('#{$english-font-bold}.oft?ver=0#iefix') format('oft');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LemonMilkLightItalic';
+    src: url('#{$english-font-light-italic}.oft?ver=0');
+    src: url('#{$english-font-light-italic}.oft?ver=0#iefix') format('oft');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LemonMilkMedium';
+    src: url('#{$english-font-medium}.oft?ver=0');
+    src: url('#{$english-font-medium}.oft?ver=0#iefix') format('oft');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LemonMilkLight';
+    src: url('#{$english-font-light}.oft?ver=0');
+    src: url('#{$english-font-light}.oft?ver=0#iefix') format('oft');
+    font-style: normal;
+}
+
+$font-family-base: "LemonMilkRegular";
+$font-family-medium-italic:"medium-italic";
+$font-family-bold: "LemonMilkBold";
+$font-family-light-italic: "LemonMilkLightItalic";
+$font-family-medium: "LemonMilkMedium";
+$font-family-light: "LemonMilkLight";
+

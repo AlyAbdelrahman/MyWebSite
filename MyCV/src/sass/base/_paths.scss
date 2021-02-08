@@ -1,0 +1,9 @@
+$root-path: "/assets";
+$fonts-root-path:$root-path +"/fonts";
+/*Fonts*/
+$english-font-base: $fonts-root-path + "/LemonMilkRegular";
+$english-font-medium-italic: $fonts-root-path + "/medium-italic";
+$english-font-light-italic: $fonts-root-path + "/LemonMilkLightItalic";
+$english-font-medium: $fonts-root-path + "/LemonMilkMedium";
+$english-font-bold: $fonts-root-path + "/LemonMilkBold";
+$english-font-light: $fonts-root-path + "/LemonMilkLight";
