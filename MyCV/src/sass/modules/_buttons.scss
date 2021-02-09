@@ -5,7 +5,6 @@
 	padding: 7px 12px;
 	border: 1px solid #D5D5D5;
 	background-image: linear-gradient(#EEE, #DDD);
-	font: 700 13px/18px ;
     font-family: $font-family-light-italic;
 }
 .button--state-success {
@@ -16,3 +15,44 @@
 .button--state-danger {
 	color: #900;
 }
+.button--with--transation{
+	transition: 4s;
+	/* Hidden init state */
+	opacity: 0;
+	transform: translateY(10px);
+	&.enter,
+	&.entered {
+	  /* Animate in state */
+	  opacity: 1;
+	  transform: translateY(0px);
+	}
+	
+}
+.layout-cover{
+	width: 100%;
+	height: 50%;
+	position: fixed;
+	z-index: 1000;
+	background: black;
+
+}
+.layout-appear {
+	transform: translateY(-48%) translateZ(0px);
+  }
+  .layout-appear-active {
+	transform: translateY(-150%) translateZ(0px);
+	transition: all 5s linear ;
+
+  }
+ 
+  .layout-appear-done{
+	display: none;
+  }
+  // animate out
+//   .parentComponent-child-exit {
+// 	opacity: 1;
+//   }
+//   .parentComponent-child-exit-active {
+// 	opacity: 0;
+// 	transition: opacity 700ms ease-in;
+//   }

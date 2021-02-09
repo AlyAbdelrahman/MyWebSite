@@ -10,46 +10,46 @@ $lang: en;
 
 // LTR Fonts
 @font-face {
-    font-family: 'LemonMilkRegular';
-    src: url('#{$english-font-base}.oft?ver=0');
-    src: url('#{$english-font-base}.oft?ver=0#iefix') format('oft');
+    font-family: 'SourceSansPro-Regular';
+    src: url('#{$english-font-base}.ttf?ver=0');
+    src: url('#{$english-font-base}.ttf?ver=0#iefix') format('ttf');
     font-style: normal;
 }
 @font-face {
-    font-family: 'medium-italic';
-    src: url('#{$english-font-medium-italic}.oft?ver=0');
-    src: url('#{$english-font-medium-italic}.oft?ver=0#iefix') format('oft');
+    font-family: 'SourceSansPro-Italic';
+    src: url('#{$english-font-medium-italic}.ttf?ver=0');
+    src: url('#{$english-font-medium-italic}.ttf?ver=0#iefix') format('ttf');
     font-style: normal;
 }
 @font-face {
-    font-family: 'LemonMilkBold';
-    src: url('#{$english-font-bold}.oft?ver=0');
-    src: url('#{$english-font-bold}.oft?ver=0#iefix') format('oft');
+    font-family: 'SourceSansPro-ExtraLightItalic';
+    src: url('#{$english-font-bold}.ttf?ver=0');
+    src: url('#{$english-font-bold}.ttf?ver=0#iefix') format('ttf');
     font-style: normal;
 }
 @font-face {
-    font-family: 'LemonMilkLightItalic';
-    src: url('#{$english-font-light-italic}.oft?ver=0');
-    src: url('#{$english-font-light-italic}.oft?ver=0#iefix') format('oft');
+    font-family: 'SourceSansPro-Italic';
+    src: url('#{$english-font-ExtraLightItalic}.ttf');
+    src: url('#{$english-font-ExtraLightItalic}.ttf') format('truetype');
     font-style: normal;
 }
 @font-face {
-    font-family: 'LemonMilkMedium';
-    src: url('#{$english-font-medium}.oft?ver=0');
-    src: url('#{$english-font-medium}.oft?ver=0#iefix') format('oft');
+    font-family: 'SourceSansPro-SemiBold';
+    src: url('#{$english-font-medium}.ttf?ver=0');
+    src: url('#{$english-font-medium}.ttf?ver=0#iefix') format('ttf');
     font-style: normal;
 }
 @font-face {
-    font-family: 'LemonMilkLight';
-    src: url('#{$english-font-light}.oft?ver=0');
-    src: url('#{$english-font-light}.oft?ver=0#iefix') format('oft');
+    font-family: 'SourceSansPro-Light';
+    src: url('#{$english-font-light}.ttf?ver=0');
+    src: url('#{$english-font-light}.ttf?ver=0#iefix') format('ttf');
     font-style: normal;
 }
 
-$font-family-base: "LemonMilkRegular";
-$font-family-medium-italic:"medium-italic";
-$font-family-bold: "LemonMilkBold";
-$font-family-light-italic: "LemonMilkLightItalic";
-$font-family-medium: "LemonMilkMedium";
-$font-family-light: "LemonMilkLight";
+$font-family-base: "SourceSansPro-Regular";
+$font-family-medium-italic:"SourceSansPro-Italic";
+$font-family-ExtraLightItalic: "SourceSansPro-ExtraLightItalic";
+$font-family-light-italic: "SourceSansPro-Italic";
+$font-family-medium: "SourceSansPro-SemiBold";
+$font-family-light: "SourceSansPro-Light";
 

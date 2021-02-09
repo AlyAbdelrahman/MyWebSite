@@ -1,9 +1,8 @@
-$root-path: "/assets";
-$fonts-root-path:$root-path +"/fonts";
+$fonts-root-path:"/fonts";
 /*Fonts*/
-$english-font-base: $fonts-root-path + "/LemonMilkRegular";
-$english-font-medium-italic: $fonts-root-path + "/medium-italic";
-$english-font-light-italic: $fonts-root-path + "/LemonMilkLightItalic";
-$english-font-medium: $fonts-root-path + "/LemonMilkMedium";
-$english-font-bold: $fonts-root-path + "/LemonMilkBold";
-$english-font-light: $fonts-root-path + "/LemonMilkLight";
+$english-font-base: $fonts-root-path + "/SourceSansPro-Regular";
+$english-font-medium-italic: $fonts-root-path + "/SourceSansPro-Italic";
+$english-font-ExtraLightItalic: $fonts-root-path + "/SourceSansPro-ExtraLightItalic";
+$english-font-medium: $fonts-root-path + "/SourceSansPro-SemiBold";
+$english-font-bold: $fonts-root-path + "/SourceSansPro-Bold";
+$english-font-light: $fonts-root-path + "/SourceSansPro-Light";
