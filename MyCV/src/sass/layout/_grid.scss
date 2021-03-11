@@ -54,4 +54,32 @@
     opacity: 1;
     transition: all .5s linear .8s;
   }
+  .scrollDownText{
+    top: 900vh;
+    position: fixed;
+    font-size: 1.4rem;
+    bottom: 80px;
+    left: 0;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    color: #fff;
+    transition: 2s;
+    z-index: 100;
+    &::after{
+      content: "";
+      width: 2px;
+      height: 64px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  .fp-viewing-0 .scrollDownText {
+    top: 65vh;
+  }
   

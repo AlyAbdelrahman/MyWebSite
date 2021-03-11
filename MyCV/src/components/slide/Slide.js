@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Slide = ({ text, backgroundImage, subHeader }) => (
+const Slide = ({
+  text, backgroundImage, subHeader, slideNumber,
+}) => (
     <div className="slideContainer" >
         <div className="slide__text">
             <div className="slide__text__container">

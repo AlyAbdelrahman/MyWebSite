@@ -65,22 +65,16 @@ function App() {
         return (
         <ReactFullpage.Wrapper>
           <div className="section section0">
-          <Slide text="Hi,        I'm Aly" subHeader="Web & User Interface     Developer"/>
+          <Slide text="Hi,        I'm Aly" subHeader="Web & User Interface     Developer" slideNumber="1"/>
+          <p className="scrollDownText">scroll down</p>
           </div>
           <div className="section section1 ">
           <Slide text="About Me" backgroundImage="https://www.capturelandscapes.com/wp-content/uploads/2019/04/Desert-Nights.jpg"/>
 
           </div>
           <div className="section ">
-          <div className="fp-bg"></div>
+          <Slide text="What I'm Into" backgroundImage="https://www.capturelandscapes.com/wp-content/uploads/2019/04/Desert-Nights.jpg"/>
 
-          <div style={{ display: 'flex' }}>
-            <p>Section 3</p>
-            <div style={{ background: 'green', width: '200rem', height: '40rem' }}>
-
-            </div>
-
-          </div>
           </div>
         </ReactFullpage.Wrapper>
         );
