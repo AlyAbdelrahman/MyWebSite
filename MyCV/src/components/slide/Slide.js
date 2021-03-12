@@ -22,6 +22,12 @@ const Slide = ({
             <img src={backgroundImage}></img>
         </div>}
         {backgroundComponent && <Sphere />}
+        {slideNumber >= 1
+        && <div className="pageNumberContainer">
+            <p className="pageNumber">{slideNumber}</p>
+        </div>
+        }
+
     </div>
 );
 

@@ -79,6 +79,21 @@
       margin: auto;
     }
   }
+  .pageNumber{
+    line-height: 1.1;
+    text-shadow: 0 10px 30px #020b1680;
+    position: absolute;
+    overflow-y: hidden;
+   
+    font-size: 15rem;
+    color: #fff;
+    font-family: "fantasy";
+    z-index: 200;
+  }
+  .pageNumberContainer{
+    right: 3vw;
+    top: 32vh;
+  }
   .fp-viewing-0 .scrollDownText {
     top: 65vh;
   }
