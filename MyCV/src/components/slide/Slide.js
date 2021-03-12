@@ -1,7 +1,8 @@
 import React from 'react';
+import Sphere from 'containers/sphere/Sphere';
 
 const Slide = ({
-  text, backgroundImage, subHeader, slideNumber,
+  text, backgroundImage, subHeader, slideNumber, backgroundComponent, showMeButtonLink,
 }) => (
     <div className="slideContainer" >
         <div className="slide__text">
@@ -14,11 +15,13 @@ const Slide = ({
                 <div className="slide__text__discription">
                     <p className="slide__text__details">{subHeader}</p>
                 </div>
+               { showMeButtonLink && <a href="/" className="showMeButtonLink">Show me more</a>}
             </div>
         </div>
         {backgroundImage && <div className="slide__image">
             <img src={backgroundImage}></img>
         </div>}
+        {backgroundComponent && <Sphere />}
     </div>
 );
 

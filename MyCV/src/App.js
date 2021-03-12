@@ -65,7 +65,7 @@ function App() {
         return (
         <ReactFullpage.Wrapper>
           <div className="section section0">
-          <Slide text="Hi,        I'm Aly" subHeader="Web & User Interface     Developer" slideNumber="1"/>
+          <Slide text="Hi,        I'm Aly" subHeader="Web &       User Interface     Developer" slideNumber="1"/>
           <p className="scrollDownText">scroll down</p>
           </div>
           <div className="section section1 ">
@@ -73,7 +73,7 @@ function App() {
 
           </div>
           <div className="section ">
-          <Slide text="What I'm Into" backgroundImage="https://www.capturelandscapes.com/wp-content/uploads/2019/04/Desert-Nights.jpg"/>
+          <Slide text="What I'm Into" subHeader="Front End developing." backgroundComponent showMeButtonLink="www.google.com"/>
 
           </div>
         </ReactFullpage.Wrapper>
