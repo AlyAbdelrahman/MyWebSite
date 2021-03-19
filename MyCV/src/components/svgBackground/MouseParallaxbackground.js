@@ -20,7 +20,7 @@ const MouseParallaxbackground = ({ index }) => {
   }, [index]);
 
   return (
-  <div className="container " onMouseMove={({ clientX: x, clientY: y }) => setCiecles({ xy: calc(x, y) })}>
+  <div className={`container ${index === 0 ? 'increaseOpcity' : ''}`} onMouseMove={({ clientX: x, clientY: y }) => setCiecles({ xy: calc(x, y) })}>
    <animated.div className="card1" style={{ transform: props.xy.interpolate(trans1) }} >
         <Circles />
    </animated.div>

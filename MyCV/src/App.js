@@ -69,8 +69,14 @@ function App() {
           <p className="scrollDownText">scroll down</p>
           </div>
           <div className="section section1 ">
-          <Slide text="About Me" backgroundImage="https://www.capturelandscapes.com/wp-content/uploads/2019/04/Desert-Nights.jpg" slideNumber="01"/>
-
+          <Slide text="About Me"
+            subHeader=" The primary area of my interest is undoubtedly front-end.
+            My passion for code had begun in my early years in collage,
+            For over a 3 years I had many opportunities to work in a vast spectrum of web technologies."
+            backgroundImage="https://i.pinimg.com/originals/8b/35/fe/8b35fef55fba1a201c9c7a11d3ec3d64.gif"
+            slideNumber="01"
+            showMeButtonLink="www.google.com"
+          />
           </div>
           <div className="section ">
           <Slide text="What I'm Into" subHeader="Front End developing." backgroundComponent showMeButtonLink="www.google.com" slideNumber="02"/>
