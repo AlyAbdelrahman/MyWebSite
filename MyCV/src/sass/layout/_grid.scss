@@ -82,16 +82,20 @@
   }
   .pageNumber{
     line-height: 1.1;
-    text-shadow: 0 10px 30px #020b1680;
+    // text-shadow: 0 10px 30px #020b1680;
     position: absolute;
     overflow-y: hidden;
     right: 5%;
     top: 70%;
     font-size: 15rem;
-    color: #fff;
+    // color: #fff;
     font-family: "fantasy";
     z-index: 200;
     transition: 3s;
+    color: #c6e2ff;
+    will-change: text-shadow;
+    animation: neon .08s ease-in-out infinite alternate;
+    line-height: 1;
   }
   .pageNumberContainer{
     height: 39rem;
