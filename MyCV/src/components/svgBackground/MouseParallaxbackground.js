@@ -24,9 +24,9 @@ const MouseParallaxbackground = ({ index }) => {
    <animated.div className="card1" style={{ transform: props.xy.interpolate(trans1) }} >
         <Circles />
    </animated.div>
-   <animated.div className="card2" style={{ transform: props.xy.interpolate(trans2) }} >
+   {/* <animated.div className="card2" style={{ transform: props.xy.interpolate(trans2) }} >
         <Stars />
-   </animated.div>
+   </animated.div> */}
     <animated.div className="card3" id="animated__moon" style={{ transform: props.xy.interpolate(trans1) }} >
       <Moon/>
    </animated.div>

@@ -88,6 +88,9 @@ function App() {
       />
 
       <div className="sky-color"></div>
+      {/* <div id='stars'></div>
+    <div id='stars2'></div> */}
+    <div id='stars3'></div>
       <MouseParallaxbackground index={index}/>
 
       </>

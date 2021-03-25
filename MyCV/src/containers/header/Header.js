@@ -3,6 +3,7 @@ import Icon from 'components/icons/Icon';
 
 const Header = () => (
         <header className="header">
+    <div className="blackLoadingScreen"></div>
             <h3 className="header__title">Aly Abdelrahman</h3>
             <div className="header__socialMedia">
             <Icon icon="linkedin" size={26.4} className="header__socialMedia__icon" color='white'/>
