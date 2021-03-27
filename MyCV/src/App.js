@@ -3,6 +3,8 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import MouseParallaxbackground from 'components/svgBackground/MouseParallaxbackground';
 import Header from 'containers/header/Header';
 import Slide from 'components/slide/Slide';
+import ReactParticles from 'react-particles-js';
+import particlesConfig from './particles-config.js';
 
 import './sass/main.scss';
 
@@ -90,7 +92,18 @@ function App() {
       <div className="sky-color"></div>
       {/* <div id='stars'></div>
     <div id='stars2'></div> */}
-    <div id='stars3'></div>
+    {/* <div id='stars3'></div> */}
+    <ReactParticles
+        params={particlesConfig}
+        style={{
+          position: 'absolute',
+          zIndex: -1,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          top: 0,
+        }}
+      />
       <MouseParallaxbackground index={index}/>
 
       </>
