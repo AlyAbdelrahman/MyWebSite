@@ -65,9 +65,10 @@
 .slide__image{
      position: relative;
      width: 55%;
-     height: 74.81%;
+     height: 50.81%;
      margin: 0 8% 0 auto;
-     overflow: hidden;
+     overflow: scroll;
+     z-index: 999;
     img{
         width: 100%;
         height: 118%;

@@ -1,8 +1,9 @@
 import React from 'react';
 import Sphere from 'containers/sphere/Sphere';
+import Timeline from 'containers/timeline/timeline';
 
 const Slide = ({
-  text, backgroundImage, subHeader, slideNumber, backgroundComponent, showMeButtonLink,
+  text, backgroundImage, subHeader, slideNumber, backgroundComponent, showMeButtonLink, setisBackGroundAnimationActive,
 }) => (
     <div className="slideContainer" >
         <div className="slide__text">
@@ -19,7 +20,8 @@ const Slide = ({
             </div>
         </div>
         {backgroundImage && <div className="slide__image">
-            <img src={backgroundImage}></img>
+            {/* <img src={backgroundImage}></img> */}
+            <Timeline setisBackGroundAnimationActive={setisBackGroundAnimationActive}/>
         </div>}
         {backgroundComponent && <Sphere />}
         {slideNumber >= 1

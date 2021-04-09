@@ -10,15 +10,21 @@ import './sass/main.scss';
 
 function App() {
   const [index, setIndex] = useState(true);
-  const [animationIsFinished, setAnimationIsFinished] = useState(false);
+  const [isbackGroundAnimationActive, setisBackGroundAnimationActive] = useState(true);
 
   let fullApi;
   let timeoutId;
+  const afterLoad = (origin, destination, direction) => {
+    console.log('>>dis', destination);
+    destination.index === 1 ? setisBackGroundAnimationActive(false) : setisBackGroundAnimationActive(true);
+  };
   const handleOnSlideLeave = (currentIndex, nextIndex) => {
+    // console.log('>>currentIndex', currentIndex);
     // document.querySelector('.fp-table.active ').className += 'aos-animate';
     // setIndex(nextIndex.index);
     // console.log('>>currentIndex', currentIndex);
-    // console.log('>>nextIndex', nextIndex);
+    // console.log('>>nextIndex', nextIndex.index === 1);
+    // currentIndex.isFirst === true || currentIndex.isLast === true ? setisBackGroundAnimationActive(true) : setisBackGroundAnimationActive(false);
   };
   const onLeave = (section, origin, destination, direction) => {
     // setTimeout(() => true, 1000);
@@ -62,6 +68,8 @@ function App() {
       afterLoad={handleOnSlideLeave}
       delay={2000}
       onLeave={onLeave}
+      afterLoad={afterLoad}
+      normalScrollElements=".demo"
       render={({ state, fullpageApi }) => {
         fullApi = fullpageApi;
         return (
@@ -78,6 +86,7 @@ function App() {
             backgroundImage="https://i.pinimg.com/originals/8b/35/fe/8b35fef55fba1a201c9c7a11d3ec3d64.gif"
             slideNumber="01"
             showMeButtonLink="www.google.com"
+            setisBackGroundAnimationActive={setisBackGroundAnimationActive}
           />
           </div>
           <div className="section ">
@@ -104,7 +113,7 @@ function App() {
           top: 0,
         }}
       />
-      <MouseParallaxbackground index={index}/>
+      <MouseParallaxbackground index={index} active={isbackGroundAnimationActive}/>
 
       </>
   );

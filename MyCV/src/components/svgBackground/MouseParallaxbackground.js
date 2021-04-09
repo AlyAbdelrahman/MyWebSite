@@ -13,14 +13,14 @@ const trans2 = (x, y) => `translate3d(${x / 40 - 50}px,${y / 20 - 130}px,0)`;
 const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`;
 const trans4 = (x, y) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`;
 
-const MouseParallaxbackground = ({ index }) => {
+const MouseParallaxbackground = ({ index, active }) => {
   const [props, setCiecles] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }));
   useEffect(() => {
-    console.log(index);
-  }, [index]);
+    console.log('>>>isbackGroundAnimationActive', active);
+  }, [active]);
 
   return (
-  <div className={`container ${index === 0 ? 'increaseOpcity' : ''}`} onMouseMove={({ clientX: x, clientY: y }) => setCiecles({ xy: calc(x, y) })}>
+  <div style={{ pointerEvents: active ? 'all' : 'none' }} className={`container ${index === 0 ? 'increaseOpcity' : ''}`} onMouseMove={({ clientX: x, clientY: y }) => setCiecles({ xy: calc(x, y) })}>
    <animated.div className="card1" style={{ transform: props.xy.interpolate(trans1) }} >
         <Circles />
    </animated.div>

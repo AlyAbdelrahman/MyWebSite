@@ -85,7 +85,7 @@
     // text-shadow: 0 10px 30px #020b1680;
     position: absolute;
     overflow-y: hidden;
-    right: 5%;
+    right: 0%;
     top: 70%;
     font-size: 15rem;
     // color: #fff;
@@ -102,12 +102,14 @@
     position: absolute;
     overflow: hidden;
     width: 100%;
+    bottom: 0;
+    z-index: 998;
   }
   .fp-viewing-0 .scrollDownText {
     top: 65vh;
   }
   [class*="fp-viewing"] .active .pageNumber {
-    top: 25%
+    top: 25%;
   }
   
 
