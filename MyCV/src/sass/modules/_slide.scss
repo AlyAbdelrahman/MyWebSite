@@ -1,7 +1,7 @@
 .slide__text{
     display: flex;
     flex-direction: column;
-    left: 9%;
+    left: 5%;
     width: 100%;
     top: 0;
     position: absolute;
@@ -9,10 +9,10 @@
     overflow: hidden;
     &__container{
         position: absolute;
-        top: 20%;
+        top: 15%;
         transition: .5s ;
         transition-delay: 1.5s;        
-        width: 41rem;
+        width: 31rem;
         z-index: 99;
     }
     &__header{
@@ -63,7 +63,8 @@
     left: 0%;
 }
 .slide__image{
-     position: relative;
+     position: absolute;
+     right: 0;
      width: 55%;
      height: 50.81%;
      margin: 0 8% 0 auto;
@@ -119,9 +120,15 @@
     }
     .slide__image {
      box-shadow: 0 80px 140px -40px #00000099;
+     border: 2px solid rgba(255,255,255,.5);
+    border-radius: 1%;
+    background: #2d325d4d
      img {
          position: absolute;
          left: 0%;
      }
     }
+}
+span.vertical-timeline-element-date{
+    color: white;
 }
