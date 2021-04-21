@@ -1,0 +1,24 @@
+.showMoreProject{
+    // background-image: url("../../components/projects/cool-background.png");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    height: 0px;
+    align-items: center;
+    top: 50%;
+    transition: 2s;
+    justify-content: center;
+    display: flex;
+}
+.displayShowMoreProject{
+    opacity: 1;
+    z-index: 999;
+    height: 100%;
+    top: 0;
+}

@@ -3,7 +3,7 @@ import Sphere from 'containers/sphere/Sphere';
 import Timeline from 'containers/timeline/timeline';
 
 const Slide = ({
-  text, backgroundImage, subHeader, slideNumber, backgroundComponent, showMeButtonLink, setisBackGroundAnimationActive,
+  text, backgroundImage, subHeader, slideNumber, backgroundComponent, showMeButtonLink, setisBackGroundAnimationActive, onClickShowMore,
 }) => (
     <div className="slideContainer" >
         <div className="slide__text">
@@ -16,7 +16,7 @@ const Slide = ({
                 <div className="slide__text__discription">
                     <p className="slide__text__details">{subHeader}</p>
                 </div>
-               { showMeButtonLink && <a href="/" className="showMeButtonLink">Show me more</a>}
+               { showMeButtonLink && <button onClick={onClickShowMore} href="/" className="showMeButtonLink">Show me more</button>}
             </div>
         </div>
         {backgroundImage && <div className="slide__image">
