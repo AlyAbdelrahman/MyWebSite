@@ -15,6 +15,8 @@
     transition: 2s;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 .displayShowMoreProject{
     opacity: 1;
@@ -25,4 +27,23 @@
 
 .tsparticles-canvas-el{
     pointer-events: none !important;
+}
+
+.projectsTitle{
+    color: white;
+}
+
+#coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v.coverflow__left__PhMc6 {
+    left: 495px;
+}
+#coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v.coverflow__right__1tzAF {
+    right: 495px;
+}
+@media (max-width: 900px) {
+    #coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v.coverflow__left__PhMc6 {
+        left: 33vw;
+    }
+    #coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v.coverflow__right__1tzAF {
+        right: 33vw;
+    }
 }

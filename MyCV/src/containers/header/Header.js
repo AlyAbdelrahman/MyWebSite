@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from 'components/icons/Icon';
 
-const Header = () => (
+const Header = ({ showMoreProjects, setShowMoreProjects }) => (
         <header className="header">
                 <div className="blackLoadingScreen"></div>
                 <h3 className="header__title">Aly Abdelrahman</h3>
@@ -10,7 +10,7 @@ const Header = () => (
                         <a href="https://alyabdelrahman.netlify.app/" rel="noreferrer" target="_blank"><Icon icon="cv" size={26.4} className="header__socialMedia__icon" color='white' /></a>
                         <a href="https://stackoverflow.com/users/13029579/aly-abd-el-rahman" rel="noreferrer" target="_blank"><Icon icon="stackoverflow" size={26.4} className="header__socialMedia__icon" color='white' /></a>
                         <a href="https://github.com/AlyAbdelrahman" rel="noreferrer" target="_blank"><Icon icon="github" size={26.4} className="header__socialMedia__icon" color='white' /></a>
-                        <Icon icon="menu" size={26.4} color='white' />
+                        <Icon icon="menu" size={26.4} color='white' onClick={() => setShowMoreProjects(false)} />
 
                 </div>
         </header>

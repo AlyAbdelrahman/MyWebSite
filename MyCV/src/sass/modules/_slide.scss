@@ -137,4 +137,9 @@
 span.vertical-timeline-element-date{
     color: white;
 }
-
+[class*="coverflow__figure"]{
+height: 22rem;
+img{
+    height: 100%;
+}
+}
