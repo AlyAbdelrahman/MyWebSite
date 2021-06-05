@@ -14,6 +14,21 @@
         transition-delay: 1.5s;        
         width: 31rem;
         z-index: 99;
+        @media only screen and (max-width: 768px) and (min-width:416px) {
+            transform: scale(0.8);
+            top: 25%;
+        }
+    @media only screen and (max-width: 415px) {
+        transform: scale(0.5);
+        top: 50%;
+        width: 50rem;
+        left: -26%;
+    }
+  @media only screen and (max-width: 1439px) and (min-width:768px) {
+    transform: scale(0.8);
+    transform-origin: left;
+    max-width: 30rem;
+  }
     }
     &__header{
         color: $white;
@@ -61,6 +76,9 @@
   
 [class*="fp-viewing"] .active .slide__text__header,[class*="fp-viewing"] .active .slide__text__discription, [class*="fp-viewing"] .active .slide__text__details {
     left: 0%;
+    @media only screen and (max-width: 768px) and (min-width:416px) {
+        max-width: 90%;
+    }
 }
 .slide__image{
      position: absolute;
@@ -128,6 +146,10 @@
     background: #2d325d4d;
     right: 0;
     opacity: 1;
+    @media only screen and (max-width: 768px) and (min-width:416px) {
+        right: -10%;
+        transform: scale(0.8);
+    }
      img {
          position: absolute;
          left: 0%;
@@ -139,7 +161,55 @@ span.vertical-timeline-element-date{
 }
 [class*="coverflow__figure"]{
 height: 22rem;
+@media only screen and (max-width:768px) {
+    height: 11rem;
+
+}
 img{
     height: 100%;
 }
+}
+
+.section1{
+    @media only screen and (max-width: 415px){
+        .slide__text__container {
+            top: 0%;
+            width: 38rem;
+            left: -26%;
+        }
+         .slide__image{
+            width: 77%;
+            top: 53%;
+            height: 25%;
+        }
+        .pageNumber {
+            transform: scale(0.5);
+        }
+    }
+}
+@media only screen and (max-width: 415px){
+    .SphereContainer{
+        top: 3%;
+        width: 100% !important;
+        pointer-events: none;
+    }
+}
+@media only screen and (max-width: 415px){
+    .tech-section{
+        .slide__text__container {
+            top: 50%;
+            width: 50rem;
+            left: -48%;
+        }
+        .pageNumber {
+            transform: scale(0.5);
+        }
+        .showMeButtonLink{
+            transform: scale(1.5);
+            left: 8% !important;
+        }
+    }
+    [class*="coverflow__figure"]{
+        height: 12rem;
+    }
 }

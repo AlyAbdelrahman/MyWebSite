@@ -15,11 +15,18 @@
         margin: 0;
         color:$white;
         left: 1.5%;
+        @media only screen and (max-width: 768px)  {
+            font-size: 1rem;
+        }
     }
     &__socialMedia{
         display: flex;
         position: absolute;
         right: 0;
+        @media only screen and (max-width: 768px)  {
+            right: -51px;
+            transform: scale(0.7);
+        }
         &__icon{
             margin-right: 3.2rem;
             transition: 1s;

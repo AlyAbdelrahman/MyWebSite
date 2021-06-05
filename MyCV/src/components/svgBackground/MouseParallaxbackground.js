@@ -15,20 +15,16 @@ const trans4 = (x, y) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`;
 
 const MouseParallaxbackground = ({ index, active }) => {
   const [props, setCiecles] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }));
-  useEffect(() => {
-    console.log('>>>isbackGroundAnimationActive', active);
-  }, [active]);
 
   return (
   <div style={{ pointerEvents: active ? 'all' : 'none' }} className={`container ${index === 0 ? 'increaseOpcity' : ''}`} onMouseMove={({ clientX: x, clientY: y }) => setCiecles({ xy: calc(x, y) })}>
    <animated.div className="card1" style={{ transform: props.xy.interpolate(trans1) }} >
         <Circles />
    </animated.div>
-   {/* <animated.div className="card2" style={{ transform: props.xy.interpolate(trans2) }} >
-        <Stars />
-   </animated.div> */}
+
     <animated.div className="card3" id="animated__moon" style={{ transform: props.xy.interpolate(trans1) }} >
       <Moon/>
+      <p className="mainText">portfiolo</p>
    </animated.div>
    <animated.div className="card4 cloud1" id="cloud1" style={{ transform: props.xy.interpolate(trans1) }} >
       <Cloud1/>
