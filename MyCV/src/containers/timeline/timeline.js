@@ -5,7 +5,6 @@ import Icon from 'components/icons/Icon';
 
 const Timeline = ({ setisBackGroundAnimationActive }) => {
   const handleMouseOver = () => {
-    console.log('>>mouseOverrrr');
     setisBackGroundAnimationActive(false);
   };
   return (
@@ -14,7 +13,7 @@ const Timeline = ({ setisBackGroundAnimationActive }) => {
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="2011 - present"
+                date="2019 - present"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<Icon icon="briefcase" size={26.4} className="header__socialMedia__icon" color='white' />}
             >
@@ -26,7 +25,7 @@ const Timeline = ({ setisBackGroundAnimationActive }) => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="2019 - 2020"
+                date="2019 - 2019"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<Icon icon="briefcase" size={26.4} className="header__socialMedia__icon" color='white' />}
             >
