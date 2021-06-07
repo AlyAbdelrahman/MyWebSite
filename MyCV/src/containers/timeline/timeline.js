@@ -19,7 +19,7 @@ const Timeline = ({ setisBackGroundAnimationActive }) => {
                 icon={<Icon icon="briefcase" size={26.4} className="header__socialMedia__icon" color='white' />}
             >
                 <h3 className="vertical-timeline-element-title">Cegedim</h3>
-                <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                <h4 className="vertical-timeline-element-subtitle">Tagammo, Cairo</h4>
                 <p>
                 Worked as Front-end closely with our development and product team to develop, modify a web-based application and user interfaces across all channels
     </p>
