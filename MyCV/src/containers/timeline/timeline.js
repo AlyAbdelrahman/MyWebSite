@@ -9,18 +9,31 @@ const Timeline = ({ setisBackGroundAnimationActive }) => {
   };
   return (
         <VerticalTimeline className="demo" onMouseEnter={handleMouseOver}>
+             <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                date="2022 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<Icon icon="briefcase" size={26.4} className="header__socialMedia__icon" color='white' />}
+            >
+                <h3 className="vertical-timeline-element-title">Vodafone international services (_Vois)</h3>
+                <h4 className="vertical-timeline-element-subtitle">Maadi, Cairo</h4>
+                <p>
+                Working as Senior Front-end developer revamping the Vodafone ireland portal using React and maintaining the current working business portal</p>
+            </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="2019 - present"
+                date="2019 - 2022"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<Icon icon="briefcase" size={26.4} className="header__socialMedia__icon" color='white' />}
             >
                 <h3 className="vertical-timeline-element-title">Cegedim</h3>
                 <h4 className="vertical-timeline-element-subtitle">Tagammo, Cairo</h4>
                 <p>
-                Worked as Front-end closely with our development and product team to develop, modify a web-based application and user interfaces across all channels
+                Worked as Front-end developer closely with our development and product team to develop, modify a web-based application and user interfaces across all channels
     </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
