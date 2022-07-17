@@ -11,7 +11,6 @@ const Header = ({ showMoreProjects, setShowMoreProjects }) => (
                         <a href="https://stackoverflow.com/users/13029579/aly-abd-el-rahman" rel="noreferrer" target="_blank"><Icon icon="stackoverflow" size={26.4} className="header__socialMedia__icon" color='white' /></a>
                         <a href="https://github.com/AlyAbdelrahman" rel="noreferrer" target="_blank"><Icon icon="github" size={26.4} className="header__socialMedia__icon" color='white' /></a>
                         {showMoreProjects && <Icon icon="cross" size={26.4} color='white' onClick={() => setShowMoreProjects(false)} />}
-
                 </div>
         </header>
 );
